@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+<script>
+    //Problema
+    /*
+    Considere que um investidor pretende deixar seu dinheiro guardado durante um determinado período. Ele sabe o rendimento, que atualmente é de 1% ao mês, acrescerá 0,25% a cada ano que o dinheiro ficar investido.
+    Peça para o usuário informar a quantia inicial investida e quanto tempo pretende deixar guardado.
+    Apresente o valor final previsto que terá investido e a porcentagem que acresceu, comparado com a quantia inicial que foi investida.
+    */
+   const tempo = Number(prompt("informe quantos meses quer deixar o dinheiro guardado em no máximo 4 anos"))
+   let valor = Number(prompt("informe o valor que deseja depositar"))
+for(let controle = 1; controle <= tempo; controle++){
+    valor = valor * 1,01
+    if(controle = 12){
+        valor = valor * 1,125
+    }
+    if(controle = 24){
+        valor = valor * 1,150
+    }
+    if(controle = 36){
+        valor = valor * 1,175
+    }
+    if(controle = 48){
+        valor = valor * 1,200
+    }
+    
+}
+document.write(` valor final=${valor}`)
+
+
+
+
+
+
+
+</script>

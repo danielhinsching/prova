@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+<script>
+    //Problema: Coleta de Dados
+    /*
+    15 pessoas entrarão em uma sala para assistir a uma palestra.
+    Para as 15 pessoas, serão coletados dados referente ao peso e a idade.
+    Considerando os dados coletados, apresente a idade da pessoa mais velha e a idade da pessoa mais nova.
+    Apresente também o maior peso registrado entre todas as pessoas.
+    */
+
+    //Entrada
+    let lista_idade = [];
+    let lista_peso = [];
+    //Processamento
+    for(let controle = 1; controle <= 15; controle++){
+        let idade = Number(prompt(`informe a idade da pessoa ${controle}`))
+        lista_idade.push(idade)
+        let peso = Number(prompt(`informe o peso da pessoa ${controle}`))
+        lista_peso.push(peso)
+    }
+    let maior_idade = lista_idade.sort((a,b)=> b - a)[0];
+    let menor_idade = lista_idade.sort((a,b)=> a - b)[0];
+    let maior_peso = lista_peso.sort((a,b)=> b - a)[0];
+    let menor_peso= lista_peso.sort((a,b)=> a - b)[0];
+    //Saída
+document.write(` lista idade= ${lista_idade}<br>lista peso= ${lista_peso}<br> maior idade= ${maior_idade}<br> menor idade= ${menor_idade}<br>maior peso= ${maior_peso}<br> menor peso= ${menor_peso}`);
+</script>

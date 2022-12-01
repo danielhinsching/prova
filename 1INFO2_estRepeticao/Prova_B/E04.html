@@ -1,0 +1,23 @@
+<meta charset="UTF-8">
+<script>
+    //Problema: Caminhoneiro
+    /*
+    Considere que um caminhoneiro fará uma viagem longa para transporte de carga, com distância de 2000 Km.
+    Peça para que o caminhoneiro informe, em cada parada, quantos Kms percorreu. Também peça para informar quantos litros de Óleo Diesel foram colocados no caminhão.
+    Ao final do programa, apresente quantas paradas o caminhoneiro fez e também quantos litros de Óleo Diesel foi utilizado para percorrer todo o percurso previsto.
+    */
+
+    //Entrada
+    let kiloemtros_rodados = 0;
+    let litros_total = 0;
+    let controle = 0;
+    //Processamento
+    for(controle = 0; kiloemtros_rodados < 2000; controle++){
+     let km = Number(prompt(`informe quantos kilometros andou até a parada ${(controle + 1)}`))
+    kiloemtros_rodados = kiloemtros_rodados + km
+     let litros = Number(prompt(`informe quantos litros voce usou até a parada ${(controle + 1)}`))
+    litros_total = litros_total + litros
+}
+    //Saída
+    document.write(`numero de paradas= ${controle}<br> litros usados = ${litros_total}`)
+</script>

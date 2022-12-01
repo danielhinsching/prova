@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    //Problema: Feirante
+    /*
+    O feirante começa a feira com um estoque de apenas 25Kgs de tomate, e ficará na feira até que o seu produto acabe.
+    Peça para o feirante registrar qual a quantidade de tomates que cada um dos seus clientes compram.
+    O programa deverá apresentar a quantidade de clientes que conseguiram comprar tomates, antes que ele acabasse.
+    */
+
+    //Entrada
+let tomates_comprados = 0;
+let controle = 0;
+    //Processamento
+for(controle = 0; tomates_comprados < 25; controle++){
+    let tomates = Number(prompt(`cliente ${(controle + 1)} informe quantos kilos de tomate comprou`))
+    tomates_comprados = tomates_comprados + tomates;   
+}
+
+    //Saída
+    document.write(`${controle} clientes conseguiram comprar tomate`);
+</script>
